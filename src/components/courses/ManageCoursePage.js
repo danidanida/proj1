@@ -104,7 +104,7 @@ export function getCourseBySlug(courses, slug) {
 function mapStateToProps(state, ownProps) {
   const slug = ownProps.match.params.slug;
   const course =
-    slug && state.courses.lenght > 0
+    slug && state.courses.length > 0
       ? getCourseBySlug(state.courses, slug)
       : newCourse;
   return {
